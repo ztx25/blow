@@ -50,13 +50,7 @@
  	top: 40px;
  }
 
-.navigation a {
-	font-size: 14px;
-	font-family: MRegular;
-	color: #111;
-	text-decoration: none;
-	transition: all .2s ease-out;
-}
+
 
 .navigation {
 	padding-right: 40px; 
@@ -68,6 +62,13 @@
 	padding: 35px 20px;
 }
 
+.navigation a {
+	font-size: 14px;
+	font-family: MRegular;
+	color: #111;
+	text-decoration: none;
+	transition: all .2s ease-out;
+}
 .navigation a:hover {
 	color: #fff;  
 	background: #111; 
@@ -102,4 +103,5 @@ a.active {
 	font-family: MBlack; 
 	border: 1px solid #111;
 	transition: all .3s ease;
-}
+} 
+
