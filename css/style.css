@@ -46,8 +46,13 @@
   font-family: MBlack;
   line-height: 0.75;
   position: relative;
-  left: 120px;
-  top: 40px;
+  left: 8%;
+  top: 8%;
+}
+
+.navigation {
+  padding-right: 40px;
+  float: right;
 }
 
 .navigation a {
@@ -58,14 +63,9 @@
   transition: all .2s ease-out;
 }
 
-.navigation {
-  padding-right: 40px;
-  float: right;
-}
-
 .navigation li {
   display: inline-block;
-  padding: 35px 20px;
+  margin: 55px 20px;
 }
 
 .navigation a:hover {
@@ -90,9 +90,9 @@ a.active {
   top: 75%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
   cursor: pointer;
   border-radius: 20px;
+  box-shadow: 0px 25px 60px 5px  #000000;
 }
 
 .btn:hover {
@@ -138,4 +138,154 @@ a.active {
   height: 16%;
   position: relative;
   bottom: 0;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .navigation li {
+    padding: 30px 10px;
+    margin: 0;
+  }
+  .navigation a {
+    font-size: 12px;
+  }
+  .logo {
+    font-size: 20px;
+    left: 8%;
+    top: 5%;
+  }
+  .leftText {
+    margin-left: 25%;
+  }
+}
+
+/*@media (max-width: 768px ) {
+.navigation {
+	padding-right: 20px; }
+
+.navigation li {
+	padding: 30px 5px;
+	margin: 0;  }
+
+.navigation a {
+	font-size: 12px; }
+
+.logo {
+ 	font-size: 18px;
+ 	position: relative;
+ 	left: 8%;
+ 	top: 6%; }
+
+.leftCase img {
+	height: 16%;
+	width: 150%; }
+ }*/
+@media (max-width: 768px) {
+  .first {
+    height: 100vh;
+  }
+  .center {
+    height: 60vh;
+  }
+  .navigation {
+    padding-right: 10px;
+  }
+  .navigation li {
+    padding: 15px 5px;
+    margin: 0;
+  }
+  .navigation a {
+    font-size: 10px;
+  }
+  .btn {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+  }
+  .logo {
+    font-size: 16px;
+    position: relative;
+    left: 6%;
+    top: 5%;
+  }
+  .leftCase img {
+    height: 14%;
+    width: 150%;
+  }
+  .leftText {
+    margin-left: 20%;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 560px) {
+  .first {
+    height: 100vh;
+  }
+  .center {
+    height: 30vh;
+  }
+  .navigation {
+    padding-right: 5px;
+  }
+  .navigation li {
+    padding: 5px 3px;
+    margin: 0;
+  }
+  .navigation a {
+    font-size: 6px;
+  }
+  .btn {
+    padding: 6px 18px;
+    font-size: 6px;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+  }
+  .btn:hover {
+    padding: 6px 15px;
+  }
+  .logo {
+    font-size: 12px;
+    position: relative;
+    top: 5%;
+  }
+  .leftCase img {
+    height: 19%;
+    width: 150%;
+  }
+  .leftText {
+    margin-left: 25%;
+    font-size: 6px;
+  }
+}
+
+@media (max-height: 870px) {
+  .navigation li {
+    padding: 10px 3px;
+    margin: 0;
+  }
+  .leftText {
+    height: 80%;
+    margin-left: 30%;
+  }
+  .leftCase {
+    height: 12%;
+  }
+  .leftCase img {
+    height: 30%;
+    width: 100%;
+  }
+}
+
+@media (max-height: 520px) {
+  .leftText {
+    font-size: 9px;
+  }
+}
+
+@media (max-height: 390px) {
+  .leftText {
+    font-size: 7px;
+  }
 }
